@@ -1,0 +1,84 @@
+@totalHeight: 400px;
+@totalWidth: 650px;
+@actionsHeight: 40px;
+
+head, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.notebook-container {
+  width: @totalWidth;
+  margin: 0 auto;
+  height: @totalHeight;
+}
+
+.noteBook {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.noteListWrap {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+.noteListActions {
+  position: absolute;
+  bottom: 0;
+  height: @actionsHeight;
+  width: 100%;
+  background-color: #689f38;
+  //background-color: #1976d2;
+  line-height: 40px;
+  font-size: 13px;
+  color: white;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.noteList {
+  width: 100%;
+  height: @totalHeight - @actionsHeight;
+  overflow: auto;
+  background-color: #8bc34a !important;
+  border-radius: 0 !important;
+}
+
+.noteItem {
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.noteTitle {
+  font-size: 12px;
+  color: #fab92b;
+}
+
+.noteTime {
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+  font-size: 11px;
+  color: #666;
+}
+
+.noteItemWrap {
+  transform: perspective(1300px) rotateX(-14deg);
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0px -1px 2px 0px #bbb;
+}
