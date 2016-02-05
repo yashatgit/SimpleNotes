@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Styles from '../less/main.less';
-import Paper from 'material-ui/lib/paper';
 
+import Paper from 'material-ui/lib/paper';
 import NotePage from './notePage.js';
 import NoteList from './noteList.js';
 import Notes from './notes.js';

@@ -1,11 +1,11 @@
-import Backbone from 'backbone';
+import { Collection, Model } from 'backbone';
 import BackboneLocalStorage from 'backbone.localstorage';
 
 const LS_KEY = '~~notes~~';
 
-export default Backbone.Collection.extend({
+export default Collection.extend({
 
-  model: Backbone.Model.extend({
+  model: Model.extend({
 
     defaults: {
       t: 'Untitled Note',

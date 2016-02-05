@@ -34376,17 +34376,15 @@
 
 	var _backbone = __webpack_require__(280);
 
-	var _backbone2 = _interopRequireDefault(_backbone);
-
 	var _backboneLocalstorage = __webpack_require__(283);
 
 	var _backboneLocalstorage2 = _interopRequireDefault(_backboneLocalstorage);
 
 	var LS_KEY = '~~notes~~';
 
-	exports['default'] = _backbone2['default'].Collection.extend({
+	exports['default'] = _backbone.Collection.extend({
 
-	  model: _backbone2['default'].Model.extend({
+	  model: _backbone.Model.extend({
 
 	    defaults: {
 	      t: 'Untitled Note',
@@ -34412,7 +34410,7 @@
 	  },
 
 	  createNew: function createNew() {
-	    return _backbone2['default'].Collection.prototype.create.call(this, {
+	    return Backbone.Collection.prototype.create.call(this, {
 	      d: +new Date()
 	    }, {
 	      silent: true
@@ -34420,7 +34418,7 @@
 	  },
 
 	  fetch: function fetch() {
-	    _backbone2['default'].Collection.prototype.fetch.apply(this, arguments);
+	    Backbone.Collection.prototype.fetch.apply(this, arguments);
 
 	    if (!this.length) {
 	      this.createNew();

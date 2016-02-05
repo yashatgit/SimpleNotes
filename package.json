@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --hot --progress --colors --port 3030",
     "build": "webpack --progress --colors",
     "build-js": "webpack --progress --colors ./js/app.js && uglifyjs build/bundle.js > dist/bundle.js",
-    "build-html": "cp index.html dist && cp index.html extension",
+    "build-html": "cp indeist && cp index.html extension",
     "build-dist": "npm run clean && npm run build-js && npm run build-html",
     "build-extension": "npm run build-dist && cp ./dist/{bundle.js,index.html} ./extension",
     "publish-gh-pages": "npm run build-dist && git subtree push --prefix dist origin gh-pages"
@@ -39,7 +39,6 @@
     "react-kendo": "~0.13.11",
     "react-router": "^0.13.3",
     "react-tap-event-plugin": "^0.2.1",
-    "rimraf": "^2.5.1",
     "style-loader": "^0.13.0",
     "uglifyjs": "^2.4.10",
     "webpack": "^1.12.2",
